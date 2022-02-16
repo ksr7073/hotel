@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>호텔인더불고 대구</title>
+    <!-- 파비콘 -->
+    <link href="img/favicon.jpg" type="imgae/x-icon" rel="shortcut icon">
+    <!-- 부트스트랩 css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- swiper css cdn -->
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- awsome icon cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- 외부 css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media_main.css" type="text/css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- 부트스트랩 js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- swiper js cdn -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 외부 js -->
+    <script src="js/main.js"></script>
+    <!-- 구글지도 api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko"></script> 
+  
+   <script> 
+      function initialize() { 
+      var myLatlng = new google.maps.LatLng(35.874355,128.659788); // 좌표값
+      var mapOptions = { 
+        zoom: 14, // 지도 확대레벨 조정
+        center: myLatlng, 
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      } 
+      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
+      var marker = new google.maps.Marker({ 
+      position: myLatlng, 
+      map: map, 
+      title: "호텔인더불고대구" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+     }); 
+     } 
+     window.onload = initialize;
+ </script>
+    
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+           <div class="header_wrap">
+            <div class="logo">
+                <a href="index.html"> </a>
+            </div>
+            <nav>
+               <ul>
+                   <li>
+                       <a href="#">ROOMS</a>
+                       <ul class="sub">
+                           <li><a href="#">부띠끄</a></li>
+                           <li><a href="#">본관</a></li>
+                           <li><a href="#">더파크빌리지</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                    <a href="#">WEDDING</a>
+                    <ul class="sub">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">컨벤션</a></li>
+                        <li><a href="#">웨딩 파크빌리지</a></li>
+                        <li><a href="#">웨딩 인터빌리지</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">BANQUET</a>
+                    <ul class="sub">
+                        <li><a href="#">컨벤션</a></li>
+                        <li><a href="#">즐거운홀</a></li>
+                        <li><a href="#">행복한홀</a></li>
+                        <li><a href="#">레이디스</a></li>
+                        <li><a href="#">아망떼</a></li>
+                        <li><a href="#">인터 라운지</a></li>
+                        <li><a href="#">허니문 라운지</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">FITNESS</a>
+                    <ul class="sub">
+                        <li><a href="#">멤버쉽</a></li>
+                        <li><a href="#">라운지</a></li>
+                        <li><a href="#">헬스클럽</a></li>
+                        <li><a href="#">실내수영장</a></li>
+                        <li><a href="#">필라테스</a></li>
+                        <li><a href="#">에어로빅스튜디오</a></li>
+                        <li><a href="#">18홀 퍼팅골프장</a></li>
+                        <li><a href="#">사우나</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">FACILITY</a>
+                    <ul class="sub">
+                        <li><a href="#">비지니스센터</a></li>
+                        <li><a href="#">웨딩드레스샵</a></li>
+                        <li><a href="#">NOVELA스냅</a></li>
+                        <li><a href="#">한복점</a></li>
+                        <li><a href="#">편집샵</a></li>
+                        <li><a href="#">카지노</a></li>
+                        <li><a href="#">갤러리 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">CUSTOMER</a>
+                    <ul class="sub">
+                        <li><a href="#">제휴안내</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">관광정보</a></li>
+                        <li><a href="#">연락처안내</a></li>
+                        <li><a href="#">문의·상담</a></li>
+                        <li><a href="#">층별안내</a></li>
+                        <li><a href="#">주차안내</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                  </li>
+               </ul>
+            </nav>
+            <div class="menu">
+                <a href="#"></a>
+            </div>
+            <!-- 서브메뉴 배경 -->
+            <div class="sub_bg"></div>
+           </div>
+        </header>
+        <section class="s1">
+            <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide main1">
+            <div class="main_txt">
+                <h1>Bareumi Hotel INter-Burgo Daegu<br></h1>
+                <p>아름다운과 아늑함이 공존하는, 호텔 인더불고 대구</p>
+            </div>
+          </div>
+          <div class="swiper-slide main2">
+            <div class="main_txt">
+                <h1>Bareumi Hotel INter-Burgo Daegu<br></h1>
+                <p>아름다운과 아늑함이 공존하는, 호텔 인더불고 대구</p>
+            </div>
+          </div>
+          <div class="swiper-slide main3">
+            <div class="main_txt">
+                <h1>Bareumi Hotel INter-Burgo Daegu<br></h1>
+                <p>아름다운과 아늑함이 공존하는, 호텔 인더불고 대구</p>
+            </div>
+          </div>
+          <div class="swiper-slide main4">
+            <div class="main_txt">
+                <h1>Bareumi Hotel INter-Burgo Daegu<br></h1>
+                <p>아름다운과 아늑함이 공존하는, 호텔 인더불고 대구</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+      </div>
+        </section>
+        <section class="s2">
+            <div class="center container">
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 company_txt">
+                        <h1><span>The Buffet At INter-Burgo</span></h1><br>
+                        <p>서울과 부산에서만 봐왔던 5성 호텔의 프리미엄뷔페
+                            전국에서 찾아오는 최대 규모의 '더뷔페 앳인터불고'
+                            전국에서 찾아오는 숲 속 휴식, 강물 위 레스토랑
+                            만남을 가치 있게 국내 최대 규모의 초특급 
+                            더뷔페 앳 인터불고가 우리 곁에 왔습니다. </p>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6  company_img ">
+                        <img src="img/section2.png" alt="정보">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="center">
+                <p class="fade_animation">호텔 인터불고의 특별한 부띠끄 룸을 소개합니다!</p>
+                <h1 class="fade_animation">Room Boutique</h1>
+                <div class="product up_animation">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide p1">
+                              <div class="p_top">
+                                  <h3>NORMAL</h3>
+                                  <i>
+                                      <img src="img/section3-icon.png" alt="버튼">
+                                  </i>
+                              </div>
+                              <div class="p_bottom">
+                                 <div class="p_left">
+                                     <p>화사한 실내 디자인과 유비쿼터스 홈스테이크워크 등<br>
+                                        첨단 시스템을 갖춘 고품격 노멀룸을 만나보세요.</p>
+                                 </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide p2">
+                            <div class="p_top">
+                                <h3>SUPERREAL</h3>
+                                <i>
+                                    <img src="img/section3-icon.png" alt="버튼">
+                                </i>
+                            </div>
+                            <div class="p_bottom">
+                               <div class="p_left">
+                                   <p>
+                                    화사한 실내 디자인과 유비쿼터스 홈스테이크워크 등<br>
+                                    첨단 시스템을 갖춘 고품격 슈페리얼룸을 만나보세요.</p>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide p3">
+                            <div class="p_top">
+                                <h3>DELUXE</h3>
+                                <i>
+                                    <img src="img/section3-icon.png" alt="버튼">
+                                </i>
+                            </div>
+                            <div class="p_bottom">
+                               <div class="p_left">
+                                   <p>
+                                    화사한 실내 디자인과 유비쿼터스 홈스테이크워크 등<br>
+                                    첨단 시스템을 갖춘 고품격 디럭스룸을 만나보세요.</p>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide p4">
+                            <div class="p_top">
+                                <h3>LUXURY</h3>
+                                <i>
+                                    <img src="img/section3-icon.png" alt="버튼">
+                                </i>
+                            </div>
+                            <div class="p_bottom">
+                               <div class="p_left">
+                                   <p>
+                                    화사한 실내 디자인과 유비쿼터스 홈스테이크워크 등<br>
+                                    첨단 시스템을 갖춘 고품격 럭셔리룸을 만나보세요.</p>
+                               </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center container">
+                <h1 class="fade_animation"><span>Wedding Hall Info</span></h1>
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_left">
+                        <div class="s4_img s4_ani1">
+                            <img src="img/section4-1.png" alt="결혼식">
+                        </div>
+                        <div class="s4_des s4_ani2">
+                            <h3>Convention Wedding</h3>
+                            <p>낭만적인 분위기로 보석을 세팅하듯<br>
+                                소중히 모시는 감동적인 결혼식을<br>
+                                음미할 수 있는 컨벤션 웨딩</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 s4_right">
+                        <div class="s4_img s4_ani3">
+                            <img src="img/section4-2.png" alt="결혼식">
+                        </div>
+                        <div class="s4_des s4_ani4">
+                            <h3>Wedding Park Village</h3>
+                            <p>자연 속의 특별한 공간에서<br>
+                                누구보다 프라이빗한 웨딩을<br>
+                                실현시켜주는 웨딩 파크빌리지</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="center">
+                <div class="acc up_animation">
+                    <div class="acc_item acc1">
+                        <span>FITNESS</span>
+                        <h1>Heealth Club Info</h1>
+                        <p>특별한 당신을 위한 차별화된 서비스 헬스클럽</p>
+                    </div>
+                    <div class="acc_item acc2">
+                        <span>FITNESS</span>
+                        <h1>Swimming Pool</h1>
+                        <p>특별한 당신을 위한 차별화된 서비스 수영장</p>
+                    </div>
+
+                    <div class="acc_item acc3 active">
+                        <span>FITNESS</span>
+                        <h1>Driving Range</h1>
+                        <p>특별한 당신을 위한 차별화된 서비스 실내골프 연습장</p>
+                    </div>
+                    <div class="acc_item acc4">
+                        <span>FITNESS</span>
+                        <h1>Sauna</h1>
+                        <p>특별한 당신을 위한 차별화된 서비스 사우나</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="center">
+                <div class="service">
+                    <ul>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/section6-1.png
+                            " alt="룸서비스">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/section6-2.png" alt="룸서비스">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/section6-3.png" alt="룸서비스">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/section6-4.png" alt="룸서비스">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/section6-5.png" alt="룸서비스">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/section6-6.png" alt="룸서비스">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/section6-7.png" alt="룸서비스">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/section6-8.png" alt="룸서비스">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s7">
+           <div id="map_canvas" style="border: 0;"></div>
+           <div class="s7_addr up_animation">
+               <div class="s7_img">
+                   
+               </div>
+               <div class="s7_info">
+                <address>
+                    <h1>Hotel Inter-Burgo DAEGU</h1>
+                    <P><span>편안함</span>과<span>안락함</span>을 선사할 134개의 객실과  매일 아침 신선한 재료로<br>
+                    제공되는 조식 뷔페, 각종 세미나 및 워크샵, 국제 행사 등<br>
+                    성공적인 비즈니스를 위한 연회장, 맞춤형 전문 컨설팅을 통한<br>
+                    품격 있는 웨딩홀을 보유하고 있습니다. 또한, 호텔 내 골프장 이용으로<br>
+                    도심 속에 비즈니스로  지친 몸과 마음의 피로를 풀 수 있는<br>
+                    <span>최고의 휴식처</span>를 제공합니다.</P>
+                </address>
+                <div class="s7_right s7_des">
+                    <address>
+                        주소 : 42064 대구광역시 수성구 팔현길 212(만촌동300번지)<br>대표전화 : 053-602-7114
+                    </address>
+                </div>
+                <div class="s7_right s7_tel">
+                        <p>
+                            관광안내 전화<span>☎1330</span>은 내·외국인 관광객들에게 국내여행에<br>
+                            대한 다양한 정보를 안내해주는 한국의 관광안내 대표전화입니다.</p>
+                </div>
+                <div class="s7_brown">
+                </div>
+               </div>
+           </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="ft">
+                <div class="footer_list">
+                    <ul>
+                        <li><a href="#">About Us </a></li>
+                        <li><a href="#">개인정보처리방침 </a></li>
+                        <li><a href="#">영상정보처리운영관리지침</a></li>
+                        <li><a href="#">이메일무단수집금지 </a></li>
+                        <li><a href="#">관리자  </a></li>
+                    </ul>
+                </div>
+                <div class="footer_txt">
+                    <p class="en"><span>바르미 호텔인터불고 대구</span> 대표이사 김성곤 주소 우 42064.대구광역시 수성구 팔현길 212(만촌동)<br>
+                        전화번호 053-602-7114 팩스번호 053-953-2008 사업자 등록번호 460-85-00140<br>
+                        이메일 bareumi@inter_burhgo.co.kr 개인정보보호책임자 도종필</p>
+                    <p class="cr">CopyrightⓒENJOY THE WORLD HOTEL INTER-BURGO ALL right reserved. Designed by KOWEB</p>
+                </div>
+                </div>
+                <div class="footer_site">
+                    <div class="sns">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/instar-icon.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="family">
+                        <a href="#" class="fa_btn">Family site</a>
+                        <a href="#">바르미</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- top버튼 -->
+        <div class="top">TOP</div>
+    </div>
+     <!-- 사이트맵 -->
+     <div class="sitemap">
+         <div class="site_logo">
+             <img src="img/white-logo.png" alt="사이트맵 로고">
+         </div>
+         <div class="site_color">
+             <img src="img/color-logo.png" alt="컬러로고">
+         </div>
+         <div class="site_close">
+                <a href="#"><img src="img/m-close-icon.png" alt="닫기"></a>
+         </div>
+         <nav class="site_nav">
+                
+                    <ul>
+                        <li>
+                            <a href="#">ROOMS</a>
+                            <ul class="sub">
+                                <li><a href="#">부띠끄</a></li>
+                                <li><a href="#">본관</a></li>
+                                <li><a href="#">더파크빌리지</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                         <a href="#">WEDDING</a>
+                         <ul class="sub">
+                             <li><a href="#">소개</a></li>
+                             <li><a href="#">컨벤션</a></li>
+                             <li><a href="#">웨딩 파크빌리지</a></li>
+                             <li><a href="#">웨딩 인터빌리지</a></li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a href="#">BANQUET</a>
+                         <ul class="sub">
+                             <li><a href="#">컨벤션</a></li>
+                             <li><a href="#">즐거운홀</a></li>
+                             <li><a href="#">행복한홀</a></li>
+                             <li><a href="#">레이디스</a></li>
+                             <li><a href="#">아망떼</a></li>
+                             <li><a href="#">인터 라운지</a></li>
+                             <li><a href="#">허니문 라운지</a></li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a href="#">FITNESS</a>
+                         <ul class="sub">
+                             <li><a href="#">멤버쉽</a></li>
+                             <li><a href="#">라운지</a></li>
+                             <li><a href="#">헬스클럽</a></li>
+                             <li><a href="#">실내수영장</a></li>
+                             <li><a href="#">필라테스</a></li>
+                             <li><a href="#">에어로빅스튜디오</a></li>
+                             <li><a href="#">18홀 퍼팅골프장</a></li>
+                             <li><a href="#">사우나</a></li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a href="#">FACILITY</a>
+                         <ul class="sub">
+                             <li><a href="#">비지니스센터</a></li>
+                             <li><a href="#">웨딩드레스샵</a></li>
+                             <li><a href="#">NOVELA스냅</a></li>
+                             <li><a href="#">한복점</a></li>
+                             <li><a href="#">편집샵</a></li>
+                             <li><a href="#">카지노</a></li>
+                             <li><a href="#">갤러리 </a></li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a href="#">CUSTOMER</a>
+                         <ul class="sub">
+                             <li><a href="#">제휴안내</a></li>
+                             <li><a href="#">채용정보</a></li>
+                             <li><a href="#">관광정보</a></li>
+                             <li><a href="#">연락처안내</a></li>
+                             <li><a href="#">문의·상담</a></li>
+                             <li><a href="#">층별안내</a></li>
+                             <li><a href="#">주차안내</a></li>
+                             <li><a href="#">오시는길</a></li>
+                         </ul>
+                       </li>
+                    </ul>
+                
+         </nav>
+         <div class="site_sns">
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+         </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko"></script> 
+</body>
+</html>
